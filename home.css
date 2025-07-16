@@ -1,0 +1,202 @@
+body {
+    background-color: azure;
+}
+.logo{
+ font-size: 30px;
+}
+.home-section{
+    margin-top: 40px;
+    height: 100vh;
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.service-section{
+    margin-top: 40px;
+    height: 250px;
+    width: 90%;
+    padding-left: 5%;
+
+}
+.service-section h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.info-section{
+    margin-top: 200px;
+    height: auto;
+    width: 90%;
+    padding-left: 5%;
+
+}
+.main-heading{
+    font-size: 70px;
+    font-weight: 500;
+}
+.down-arrow{
+    background-color: black;
+    height: 60px;
+    width: 70px;
+    position: absolute;
+    bottom: 0%;
+    right: 9%;
+    z-index: 1;
+    border: none;
+}
+
+.down-arrow img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+.home-btn{
+    background-color: black;
+    height: 65px;
+    width: 180px;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 20px;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+}
+.no-def{
+    text-decoration: none;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.no-def li{
+    float: left;
+    margin: 20px;
+    color: gray;
+}
+.no-def li h4{
+    font-size: 50px;
+    font-weight: 400;
+}
+.no-def li label{
+    font-size: 15px;
+}
+.icon-div{
+    padding: 12px;
+    background-color: rgb(224, 224, 236);
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+}
+
+.newsletter{
+    height: 300px;
+    width: 45%;
+    z-index: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.newsletter h4{
+    font-size: 30px;
+}
+.center{
+    text-align: center;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    margin-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+  #textInput {
+    width: 100%;
+    padding-right: 40px; /* Leave space for the clear button */
+    padding: 10px;
+    border: none;
+    height: 60px;
+  }
+  
+  #emailBtn {
+    position: absolute;
+    top: 42%;
+    right: 5px;
+    transform: translateY(-50%);
+    background-color: #050505;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 60px;
+    width: 150px;
+    z-index: 1;
+    border-radius: 4px;
+  }
+  
+  footer{
+    height: 400px;
+    width: 100%;
+    background-color: #050505;
+    color: #D1D1D1;
+    z-index: 0;
+  }
+  footer li {
+    list-style: none;
+    line-height: 40px;
+  }
+
+.over-div{
+    z-index: 1;
+    height: 400px;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 28%;
+    left: 12%;
+  }
+.sub-over-div{
+    margin: 20px;
+    background-color: black;
+    height: 400px;
+    width: 450px;
+    z-index: 2;
+    float: left; 
+    padding: 20px;
+    color: aliceblue;
+}
+
+.profile {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.social{
+    height: 40px;
+    width: 40px;
+    padding:15px ;
+    margin: 15px;
+    background-color: #313131;
+}
+.side-btn{
+    height: 60px;
+    width: 60px;
+    background-color:#F1F1F1;
+    margin-top: 30px;
+    margin-right: 25px;
+    border: none;
+}
+
+.nav-item
+{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
