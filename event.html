@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="main-heading">Hello World !!</h1>
+        <h3 id="child-heading">You Doing Well !! </h3>
+
+        <p id="text">Visit my page :)</p>
+
+        <button id="btn">Change</button>
+    </div>
+    <script>
+        let change = document.getElementById("btn")
+        change.onclick = () => {
+            console.log("Original News ! ")
+        }
+
+        let main = document.getElementById("main-heading");
+
+        main.addEventListener('click',()=>{
+            main.remove()
+        })
+    </script>
+
+    <!-- Overtide the function -->
+    <script>
+        change.onclick = () => {
+            console.log("Currupted  News ! ")
+        }
+    </script>
+</body>
+
+</html>

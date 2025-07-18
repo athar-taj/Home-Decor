@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Delegation </h1>
+    
+    <div id="parent">
+        <button>button 1</button> <br>
+        <button>button 2</button> <br>
+        <button>button 3</button> <br>
+        <button>button 4</button> <br>
+        <button>button 5</button> <br>
+        <button>button 6</button> <br>
+        <button>button 7</button> <br>
+        <button>button 8</button> <br>
+        <button>button 9</button> <br>
+        <button>button 10</button> <br>
+    </div>
+
+    <!-- event.stopPropogation() use to stop calling it's parent  -->
+    <div onclick="alert('div')" >
+        <h1 onclick="alert('heading')">Bubbling 
+            <button onclick="alert('button')">Call</button>
+        </h1>
+    </div>
+
+    <script>
+        let parent = document.getElementById("parent")
+        parent.addEventListener('click',(event) => {
+            if (event.target.tagName === "BUTTON"){
+                console.log(event.target.innerText)
+            }
+        })
+    </script>
+</body>
+</html>
