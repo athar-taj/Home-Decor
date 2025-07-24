@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello <span id="name"></span> !! </h1>
+
+    <input type="text" id="input" />
+    <button onclick="SetValue()"> Set </button>
+    <button onclick="SetValueInSession()"> Set Session </button>
+
+
+    <script>
+        
+        let name = document.querySelector("#name");
+        name.innerText = localStorage.getItem("name")
+
+        function SetValue(){
+            let input = document.querySelector("#input");
+            localStorage.setItem("name" , input.value);
+            location.reload();
+        }
+        
+        function SetValueInSession(){
+            let input = document.querySelector("#input");
+            sessionStorage.setItem("name" ,input.value);
+        }
+
+        window.addEventListener('storage' , (event) => {
+            alert("Changed Occured !! ")
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>TimeOut Example </h1>
+
+    <p id="greet"></p>
+
+    <p id="second"></p>
+    
+    <button onclick="Stop()">Stop</button>
+
+    <script>
+        function Greet(){
+            let msg = document.getElementById("greet");
+            msg.innerText = "Hello World !! ";
+        }
+
+        function showSecond(){
+
+            let second = document.getElementById("second");
+            second.innerText += " .";
+        }
+
+        const SecondIntervel = setInterval(showSecond,1000);
+        const TimeOut = setTimeout(Greet , 2000);
+
+        function Stop(){
+            console.log("Clear Timout ")
+            clearInterval(SecondIntervel)
+            clearTimeout(TimeOut);
+        }
+    </script>
+</body>
+</html>
