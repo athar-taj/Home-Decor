@@ -1,0 +1,82 @@
+position : relative, absolute , fixed ,sticky
+z-index : making layring.
+pseudo element : hover ,active ,focused ,disable , Firstchild ,nthChild
+
+
+
+dom traversing : to access subElement, Parent Element ,Siblings Element of target element.
+
+event propogation : Bubbling (down > top ) ,Capturing ( top > down)
+
+Array.slice : To get Sub Array to Main Array
+Array.splice : TO make Adition and Deletion Opration in Perticular Array Of Indexes.
+
+Hoisting : Make Intialization and Access of Element in another manner 
+let , const : RefrenceError
+var  :  undifined 
+Function : No Error
+Variable Function  : TypoError
+
+
+Higher Order Function : Function that takes Function as an argument as return as an Function
+
+Curring : Currying is a technique in functional programming where a function with multiple arguments is transformed into a sequence of functions,
+          each taking one argument at a time.
+
+
+function log(level) {
+  return function(message) {
+    console.log(`[${level}]: ${message}`);
+  };
+}
+
+const errorLog = log("ERROR");
+const infoLog = log("INFO");
+
+errorLog("Server down!"); // 👉 [ERROR]: Server down!
+infoLog("User logged in"); // 👉 [INFO]: User logged in
+
+
+Shallow Copy : After Copy of Object That affects to the Original Object.
+Deep Copy : After Copy of Object that Does't Affect the Original Object.    JSON.parse(JSON.Stringfy(Object))
+
+
+PollyFill : A polyfill is a piece of code (usually JS) that implements a modern feature on older browsers that don’t support it natively.
+
+Babel : Babel is a JavaScript compiler that allows you to use modern JavaScript (ES6/ESNext) features and converts them into backward-compatible versions.
+
+WebPack : Webpack is a module bundler for JavaScript. It takes all your files (.js, .css, .img, etc.), analyzes their dependencies, and bundles them into
+          one or more optimized files.   ( npx webpack --config webpack.config.js )
+
+Tree Shaking : Tree Shaking is the process of removing unused (dead , unreachable ) code from the final JavaScript bundle to reduce size.
+
+
+
+Call() : call() invokes a function immediately and allows you to pass arguments one by one.
+It's used when you want to execute a function with a specific this value.
+
+
+Apply() : apply() is similar to call(), but it takes arguments as an array.
+It's useful when you have arguments in an array or array-like structure.
+
+
+Bind() : bind() does not invoke the function immediately.
+It returns a new function with this permanently bound to the given object.
+Useful for callbacks or delayed execution.
+
+
+
+Promise() :
+
+| Method         | Description                                      |
+| -------------- | ------------------------------------------------ |
+| `resolve()`    | Create resolved promise                          |
+| `reject()`     | Create rejected promise                          |
+| `all()`        | Wait for all to succeed, fail fast on one reject |
+| `allSettled()` | Wait for all, return results with status         |
+| `race()`       | Settle on the first finished promise             |
+| `any()`        | Resolve on first success, error if all fail      |
+
+
+
+Event Loop : Call Stack (Normal Task) , Callback Queue(Async Opration)
