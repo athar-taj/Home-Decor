@@ -80,3 +80,4 @@ Promise() :
 
 
 Event Loop : Call Stack (Normal Task) , Callback Queue(Async Opration)
+
